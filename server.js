@@ -18,6 +18,7 @@ mongoose.connect(process.env.MONGO_URI)
 app.use('/api/ambientes', require('./routes/ambientes'));
 app.use('/api/turmas', require('./routes/turmas'));
 app.use('/api/alocacao', require('./routes/alocacao'));
+app.use('/api/disciplinas', require('./routes/disciplinas'));
 
 app.get('/', (req, res) => res.send('API do Sistema de Ensalamento 🎓'));
 
